@@ -3,7 +3,7 @@ import { Context } from "../store/appContext";
 import perfil from "../../img/perfil.jpg";
 import PropTypes from "prop-types";
 import { Link, useParams } from "react-router-dom";
-import { Heart, HeartFill } from "react-bootstrap-icons";
+// import { Heart, HeartFill } from "react-bootstrap-icons";
 
 export const Planets = (props) => {
   const { store, actions } = useContext(Context);
@@ -33,9 +33,10 @@ export const Planets = (props) => {
               Learn More!
             </span>
           </Link>
-          {isIncluded && <HeartFill />}
+          {isIncluded && <i class="bi bi-heart-fill"></i>}
           {!isIncluded && (
-            <Heart
+            <i
+              class="bi bi-heart"
               onClick={(e) => {
                 actions.addFavourite({
                   name: props.name,
