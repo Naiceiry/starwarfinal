@@ -3,7 +3,7 @@ import { Context } from "../store/appContext";
 import perfil from "../../img/perfil.jpg";
 import PropTypes from "prop-types";
 import { Link, useParams } from "react-router-dom";
-// import { Heart, HeartFill } from "react-bootstrap-icons";
+import { Heart, HeartFill } from "react-bootstrap-icons";
 
 export const People = (props) => {
   const { store, actions } = useContext(Context);

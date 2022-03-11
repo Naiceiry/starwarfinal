@@ -14,7 +14,7 @@ export const Listpeople = () => {
 	});
 
 	return (
-		<div className="text-center mt-5">
+		<div className="text-center">
 			<h1>PEOPLE</h1>
 			<div className="todo">
 				<div className="list"> {listCharacters}</div>

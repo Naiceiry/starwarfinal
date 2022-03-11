@@ -3,9 +3,9 @@ import PropTypes, { object } from "prop-types";
 import { Link } from "react-router-dom";
 import logo from "../../img/starward.jpg";
 import "../../styles/home.scss";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Context } from "../store/appContext";
-// import { BsXCircle } from "react-icons/bs";
+import { BsXCircle } from "react-icons/bs";
 export const Navbar = (props) => {
   const { store, actions } = useContext(Context);
 
@@ -18,7 +18,7 @@ export const Navbar = (props) => {
       <li key={i} id="myLiList">
         <a>
           {item.name}
-          {""} {""}
+
           <BsXCircle
             onClick={() => {
               console.log("clikado");
@@ -32,7 +32,7 @@ export const Navbar = (props) => {
 
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between"
+      className="navbar navbar-expand-lg navbar-light  d-flex justify-content-between"
       id="myNav"
     >
       <div className="row collapse navbar-collapse">

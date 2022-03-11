@@ -11,51 +11,63 @@
     align-items: center;
 }
 }*/
+.OrgHome {
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-top: 2%;
+}
+#myNav {
+  background-color: white;
+}
 .todo {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    width: 100%;
-  }
-  .list {
-    display: flex;
-  }
-  .botones {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-  h1 {
-    color: deeppink;
-    align-content: flex-start;
-  }
-  .card {
-    width: 18rem;
-  }
-  .botones {
-    display: block;
-  }
-  .bl {
-    float: left;
-  }
-  .br {
-    float: right;
-  }
-  .grand {
-    width: 100%;
-    height: 100%;
-    border-color: firebrick;
-  }
-  .imgperfil {
-    width: 100%;
-    height: 100%;
-    float: left;
-  }
-  #logo {
-    width: 30%;
-    height: 30%;
-  }
-  .mover {
-    margin-left: 680px;
-  }
-  
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  padding: 1%;
+}
+.list {
+  display: flex;
+  padding: 1%;
+  align-content: center;
+  overflow: unset;
+  width: 98%;
+}
+.botones {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+h1 {
+  color: deeppink;
+  align-content: flex-start;
+}
+.card {
+  width: 18rem;
+}
+.botones {
+  display: block;
+}
+.bl {
+  float: left;
+}
+.br {
+  float: right;
+}
+.grand {
+  width: 100%;
+  height: 100%;
+  border-color: firebrick;
+}
+.imgperfil {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+#logo {
+  width: 30%;
+  height: 30%;
+}
+.mover {
+  margin-left: 680px;
+}
