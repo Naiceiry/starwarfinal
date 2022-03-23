@@ -31,41 +31,30 @@ export const Navbar = (props) => {
   });
 
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-light  d-flex justify-content-between"
-      id="myNav"
-    >
+    <nav className="navbar navbar-expand-lg navbar-light" id="myNav">
       <div className="row collapse navbar-collapse">
-        <div className="col-6">
+        <div className="col-4 ">
           <Link to="/">
             <img id="logo" src={logo} />
           </Link>
         </div>
-        <div className="col-6  dropdown-menu-right">
-          <div className="mover">
-            <button
-              className="btn btn-outline-warning dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              favourite
-            </button>
-            <div
-              className="dropdown-menu dropdown-menu-right "
-              aria-labelledby="dropdownMenuButton"
-            >
-              <ul>
-                {store.favourites.length > 0 ? (
-                  listFavourites
-                ) : (
-                  <p>You do not have any favourite</p>
-                )}
-              </ul>
-            </div>
-          </div>
+        <div className="dropdown col-2 offset-6">
+          <button
+            className="btn btn-outline-warning dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown button
+          </button>
+          <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            {store.favourites.length > 0 ? (
+              listFavourites
+            ) : (
+              <p>You do not have any favourite</p>
+            )}
+          </ul>
         </div>
       </div>
     </nav>
